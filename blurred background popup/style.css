@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+}
+.popup-container{
+    position: fixed;
+    left: 50%;
+    width: 400px;
+    height: 200px;
+    top: 30%;
+    opacity: 1;
+    transition: all .7s;
+    transform: translate(-50%);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: url(https://images.unsplash.com/photo-1537498425277-c283d32ef9db?q=80&w=1478&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+
+    
+
+}
+
+h4{
+    font-size: 30px;
+    font-family: sans-serif;
+    margin: 10px 0;
+    color: blueviolet;
+}
+
+label{
+    color: blueviolet;
+    font-family: sans-serif;
+}
+
+.popup-btn{
+    background-color: orangered;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+.input{
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px ;
+    text-align: center;
+}
+input::placeholder{
+    color: lightgray;
+}
+
+.close-icon {
+    position: absolute;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+}
+.close-icon:hover{
+    color: orangered;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center ;
+    height: 100vh;
+background-image: url(https://images.unsplash.com/photo-1548092372-0d1bd40894a3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGNvbXB1dGVyfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: center;
+    transition: filter .7s;
+    
+    
+}
+
+h1{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.3);
+
+}
+
+.btn{
+    padding: 10px 20px;
+    width: 200px;
+    cursor: pointer;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.btn:hover{
+    filter: brightness(.8);
+}
+
+.active.container{
+    filter: blur(5px) brightness(.7);
+}
+
+.active.popup-container{
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}

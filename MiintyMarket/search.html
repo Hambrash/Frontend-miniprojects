@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Minty Market-Collections</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h1>Minty Market</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="search.html">Collections</a></p>
+            <p class="navbar-link"><a href="">Contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="show()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--side navbar-->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="close()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="search.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="">Contact</a></p>
+        </div>
+
+    </div>
+
+
+    <div class="product-session">
+        <form class="product-search">
+            <input type="text" id="search" placeholder="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        <div class="products" id="products">
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?white shirt">
+                <p>White Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?black shirt">
+                <p>Black Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?pink shirt">
+                <p>Pink Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?red shirt">
+                <p>Red Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?orange shirt">
+                <p>Orange Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?grey shirt">
+                <p>Grey Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?blue shirt">
+                <p>Blue Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?yellow shirt">
+                <p>Yellow Shirt</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingtxt" style="margin-bottom: 5px;">Miny Market</h2>
+                <p style="margin-bottom: 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo fuga
+                    possimus quod hic nesciunt aperiam provident dicta ipsa magni consequuntur voluptatem delectus illo
+                    iusto odit quasi deleniti tempora, modi dolorum.</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </div>
+        <p style="margin-top: 20px;text-align: center;">@ 2024 Minty Market</p>
+    </div>
+
+    <script src="collection.js"></script>
+
+</body>
+
+</html>

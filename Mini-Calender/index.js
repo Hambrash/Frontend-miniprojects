@@ -1,0 +1,11 @@
+const monthnameEl = document.getElementById("month-name")
+const daynameEl = document.getElementById("day-name")
+const daynumberEl = document.getElementById("day-number")
+const yearEl = document.getElementById("year")
+
+const date = new Date()
+const month = date.getMonth()
+monthnameEl.innerHTML = date.toLocaleString("en",{month : "long"})
+daynameEl.innerHTML = date.toLocaleString("en",{weekday : "long"})
+daynumberEl.innerHTML = date.getDate()
+yearEl.innerHTML = date.getFullYear()
